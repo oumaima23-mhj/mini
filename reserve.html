@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>projet finale </title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="col-lg-3 bg-dark d-none d-lg-block">
+        <a href="acceuil.html" class="navbar-brand w-100 h-100 m-0 p-0 d-flex align-items-center justify-content-center">
+        </a>
+    </div>
+   <!--navbar start-->
+   <nav class="navbar navbar-expand-lg bg-info navbar-dark p-3 p-lg-0 px-lg-5">
+    <div class="navbar-brand">
+      <a href="acceuil.html" style="color: rgb(241, 214, 34);"><b style="color: rgb(231, 66, 25);">Enchanting</b>  Tunisia Journeys</a>
+    </div>
+    <a href="acceuil.html" class="navbar-brand d-block d-lg-none">
+        <h1 class="m-0 display-4 text-primary text-uppercase">Enchanting Tunisia Journeys</h1>
+    </a>
+    <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+        <div class="navbar-nav mr-auto py-0">
+            <a href="acceuil.html" class="nav-item nav-link active">acceuil</a>
+            <a href="a propos.html" class="nav-item nav-link">a propos</a>
+            <a href="service.html" class="nav-item nav-link">service</a>
+            <a href="reserve.html" class="nav-item nav-link ">reservation</a>
+            <a href="contact.html" class="nav-item nav-link ">contact</a>
+        </div>
+        <a href="" class="btn btn-warning py-md-3 px-md-5 d-none d-lg-block">abonnez-vous</a>
+    </div>
+</nav>
+</div>
+
+  <!--navbar end-->
+<style>
+body {
+  width: 100%;
+  height: auto;
+  margin: 0;
+			background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url('https://images.unsplash.com/photo-1514890084135-f16d926f4d03?crop=entropy&cs=tinysrgb&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NTc4NzU4NzE&ixlib=rb-1.2.1&q=80');
+			background-repeat: no-repeat;
+			background-size: cover;
+			font-family: 'Open Sans', sans-serif;
+			font-size: 1.2rem;
+			line-height: 1.618;
+			color: rgb(255, 255, 255);
+		}
+
+h1, p {
+  margin: 1em auto;
+  text-align: center;
+}
+
+form {
+  width: 60vw;
+	max-width: 500px;
+	min-width: 300px;
+	margin: 0 auto;
+  padding-bottom: 2em;
+}
+
+fieldset {
+  border: none;
+  padding: 1.2rem 0;
+}
+label {
+  font-size: 1rem;
+  font-weight: bold;
+  display: block;
+	margin: 0.5rem 0;
+}
+
+.inline {
+  width: unset;
+  margin: 0 0.5em 0 0;
+  vertical-align: middle;
+}
+
+input,
+textarea,
+select {
+  margin: 7px 0 0 15px;
+	width: 100%;
+  min-height: 2em;
+}
+
+select, .room {
+			width: 7rem;
+      padding: 5px;
+			border: none;
+			background-color: rgba(255, 255, 255);
+      box-shadow: rgba(0,0,0,.1) 0 0 8px;			
+		}
+select {           
+			position: relative;
+      border-radius: 5px;
+      display: inline-block;
+		}
+
+input, textarea {
+  border: none;
+  border-radius: 5px;
+  color: rgba(10, 10, 35, 0.7);
+}
+
+input[type="submit"] {
+  display: block;
+  width: 60%;
+  margin: 1em auto;
+  height: 2em;
+  font-size: 1.1rem;
+  background-color: #3b3b4f;
+  border-color: white;
+  min-width: 300px;
+  color: inherit;
+}
+
+</style>
+  <h1>Réservation en ligne</h1>
+<p>Veuillez remplir ce formulaire avec les informations requises</p>
+<form action="">
+  <fieldset>
+    <label>Prénom 
+      <input type="text" name="firstname" />
+    </label>
+    <label>Nom 
+      <input type="text" name="lastname"  />
+    </label>
+    <label>Email 
+      <input type="email" name="email" />
+    </label>
+    <label>Numéro de téléphone 
+      <input type="text" name="phone" />
+    </label>
+    <label>Date d'arrivée 
+      <input type="date" name="check-in-date"  />
+    </label>
+    <label>Date de départ 
+      <input type="date" name="check-out-date"/>
+    </label>
+  </fieldset>
+  <fieldset>
+    <label>Type d'hébergement 
+      <select name="accomodation">
+        <option value="">(sélectionnez un)</option>
+        <option value="1">Hôtel</option>
+        <option value="2">Location avec cuisine</option>
+        <option value="3">Auberge de jeunesse</option>
+        <option value="4">Maison d'hôtes</option>
+        <option value="5">Circuits personnalisés</option>
+        <option value="6">Visites guidées</option>
+      </select>
+    </label><br>
+    <label>Nombre de chambres 
+      <input type="number" name="age" min="1" max="120" class="room" /><br><br>
+    </label>
+    <label>Type de chambre
+      <label><input type="radio" name="room-type" class="inline" /> Chambre simple</label>
+      <label><input type="radio" name="room-type" class="inline" /> Chambre double</label>
+      <label><input type="radio" name="room-type" class="inline" /> Chambre triple</label>
+      <label><input type="radio" name="room-type" class="inline" /> Chambre quadruple</label>
+    </label><br>
+    <label>Demandes supplémentaires
+      <textarea name="additional" rows="5" cols="30" placeholder="Votre message ..."></textarea>
+    </label>
+  </fieldset>
+  <input type="submit" value="Envoyer" />
+</form>
+  <!--pagination end-->
+<div class="container">
+  <nav aria-label="Pagination" class="d-flex justify-content-center"> <!-- Utilisation de la classe 'd-flex justify-content-center' pour centrer le contenu -->
+    <ul class="pagination pg-blue">
+      <li class="page-item"><a href="precedent" class="page-link">Précédent</a></li>
+      <li class="page-item"><a href="acceuil.html" class="page-link">1</a></li>
+      <li class="page-item"><a href="a propos.html" class="page-link">2</a></li>
+      <li class="page-item"><a href="service.html" class="page-link">3</a></li>
+      <li class="page-item"><a href="reserve.html" class="page-link">4</a></li>
+      <li class="page-item"><a href="contact.html" class="page-link">5</a></li>
+      <li class="page-item"><a href="suivant" class="page-link">Suivant</a></li>
+    </ul>
+  </nav>
+</div>
+<!--pagination end-->
+<!--footer start-->
+<footer class="footer bg-warning text-dark">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h4>Liens utiles</h4>
+          <ul class="list-unstyled">
+            <li><a href="#">Accueil</a></li>
+            <li><a href="#">a propos</a></li>
+            <li><a href="#">menu</a></li>
+            <li><a href="#">compte</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h4>Contactez-nous</h4>
+          <p>Adresse : 4033 mourddine,M'saken ,Tunisie</p>
+          <p>Téléphone : +216 51125770</p>
+          <p>Email : contact@enchantingtunisiajourneys.com</p>
+        </div>
+      </div>
+    </div>
+    <div class="text-center py-3 bg-info">
+      <p>&copy; 2023 Enchanting Tunisia Journeys. Tous droits réservés.</p>
+    </div>
+  </footer>
+  <!--footer end-->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
+</body>

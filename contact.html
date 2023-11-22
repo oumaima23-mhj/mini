@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>projet finale </title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    .dim:hover{
+  margin-top:5px;
+  opacity:0.8;
+  filter:alpha(opacity=80); 
+}
+
+.reservation {
+  color: white;
+  text-align: center;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 30px;
+}
+
+.res--text {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 16px;
+    text-align: center;
+    color: white;
+}
+
+hr {
+    border-top: 1px solid;
+    width: 5%;
+    margin: 50% auto;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+#contact {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background: rgb(51, 34, 175);
+  width: auto;
+  height: auto;
+}
+
+#contact-container {
+  width:500px;
+  font-family: 'Lato', calibri, arial;
+  font-size:14px;
+  font-weight:300;
+  text-align:left;
+  background:none;
+  overflow:auto;
+  color:#fff;
+  margin:50px;
+}
+
+.background img{
+  width: 500px;
+  max-width: 100%;
+  height: auto;
+  margin:50px;
+}
+
+/* Below is the design for the contact form */
+
+#contact-wrap p {
+  font-family: 'Lato', calibri, arial;
+  font-size: 25px;
+  text-align: center;
+  margin-bottom: 65px;
+}
+
+#contact-wrap {
+  font-family: 'Lato', calibri, arial;
+  font-size:16px;
+  font-weight:300;
+  width: 402px;
+  color:#fff;
+	overflow:auto; 
+  float:left;
+}
+
+#contact-area {
+  margin-left:3px;
+	width: 342px;
+  padding:20px;
+}
+
+#contact-area input, #contact-area textarea {
+	padding: 5px;
+	width: 342px;
+  font-family: 'Lato', calibri, arial;
+  font-size:14px;
+  font-weight:300;
+  color:#fff;
+      background-color:transparent;
+      border-top: 1px solid transparent;
+      border-left: 1px solid transparent;
+      border-bottom: 1px solid #fff;
+      border-right: 1px solid transparent;
+  margin-bottom:15px;
+}
+
+#contact-area textarea {
+	height: 150px;
+  background-color:transparent;
+  border-top: 1px solid transparent;
+  border-left: 1px solid transparent;
+  border-bottom: 1px solid #fff;
+  border-right: 1px solid transparent;
+}
+
+#contact-area textarea:focus, #contact-area input:focus {
+	    background-color:#dddddd;
+      border-top: 1px solid transparent;
+      border-left: 1px solid transparent;
+      border-bottom: 1px solid #fff;
+      border-right: 1px solid transparent;
+}
+
+#contact-area input.submit-button {
+  font-family: 'Lato', calibri, arial;
+  font-size:12px;
+  font-weight:300;
+  text-transform:uppercase;
+	width: 100px;
+	float: left;
+  background-color:transparent;
+  border-top: 1px solid #fff;
+  border-left: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+  border-right: 1px solid #fff;
+  
+    	-moz-transition:all 0.1s ease-in-out;
+	-webkit-transition:all 0.1s ease-in-out;
+	-o-transition:all 0.1s ease-in-out;
+	-ms-transition:all 0.1s ease-in-out;
+	transition:all 0.1s ease-in-out;
+}
+
+#contact-area input.submit-button:hover {
+  color:#fff;
+  background-color:#333;
+}
+
+label {
+	float: left;
+	text-align: left;
+	margin-right: 16px;
+	width: 100px;
+	padding-top: 5px;
+  font-family: 'Lato', calibri, arial;
+  font-size:18px;
+  font-weight:300;
+}
+
+::-webkit-input-placeholder {
+  color: #fff;
+  font-size:14px;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+  color: #fff; 
+  font-size:14px;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+  color: #fff;
+  font-size:14px;
+}
+
+:-ms-input-placeholder {  
+   color: #fff;  
+  font-size:14px;
+}
+
+
+
+  </style>
+</head>
+<body>
+    <div class="col-lg-3 bg-dark d-none d-lg-block">
+        <a href="acceuil.html" class="navbar-brand w-100 h-100 m-0 p-0 d-flex align-items-center justify-content-center">
+        </a>
+    </div>
+   <!--navbar start-->
+   <nav class="navbar navbar-expand-lg bg-info navbar-dark p-3 p-lg-0 px-lg-5">
+    <div class="navbar-brand">
+      <a href="acceuil.html" style="color: rgb(241, 214, 34);"><b style="color: rgb(231, 66, 25);">Enchanting</b>  Tunisia Journeys</a>
+    </div>
+    <a href="acceuil.html" class="navbar-brand d-block d-lg-none">
+        <h1 class="m-0 display-4 text-primary text-uppercase">Enchanting Tunisia Journeys</h1>
+    </a>
+    <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+        <div class="navbar-nav mr-auto py-0">
+            <a href="acceuil.html" class="nav-item nav-link active">acceuil</a>
+            <a href="a propos.html" class="nav-item nav-link">a propos</a>
+            <a href="service.html" class="nav-item nav-link">service</a>
+            <a href="reserve.html" class="nav-item nav-link ">reservation</a>
+            <a href="contact.html" class="nav-item nav-link ">contact</a>
+        </div>
+        <a href="" class="btn btn-warning py-md-3 px-md-5 d-none d-lg-block">abonnez-vous</a>
+    </div>
+</nav>
+  <!--navbar end-->
+<!--contact start-->
+  <div id="contact">
+  
+    <div class="background">
+      
+        <div class="reservation">Reservations</div>
+      <hr>
+      <p class="res--text">
+        Nous effectuons des réservations du dimanche au samedi ! <br> Venez profiter de l'ambiance luxuriante et des magnifiques vues tunisiennes</p>
+        <img src="magic.jpg" alt="" width="300" height="200" class="alignnone size-medium wp-image-146" />
+      </div>
+  
+  <div id="contact-container">
+  
+      
+    <div id="contact-wrap">
+      <div id="contact-area">
+        
+        <p>Contact</p>
+        
+        <form">
+          <input type="text"  placeholder="votre nom" />
+          <input type="text" placeholder="Email" />
+          <input type="text" placeholder="Téléphone" />
+          <textarea name="Message" rows="20" cols="20" id="Message" placeholder="Message"></textarea>
+          <input type="submit" name="submit" value="envoyée" class="submit-button" />
+        </form>
+        
+      </div>
+    </div>
+  
+  </div>
+  </div>
+<!--pagination-->
+<div class="container">
+    <nav aria-label="Pagination" class="d-flex justify-content-center"> <!-- Utilisation de la classe 'd-flex justify-content-center' pour centrer le contenu -->
+      <ul class="pagination pg-blue">
+        <li class="page-item"><a href="precedent" class="page-link">Précédent</a></li>
+        <li class="page-item"><a href="acceuil.html" class="page-link">1</a></li>
+        <li class="page-item"><a href="a propos.html" class="page-link">2</a></li>
+        <li class="page-item"><a href="service.html" class="page-link">3</a></li>
+        <li class="page-item"><a href="reserve.html" class="page-link">4</a></li>
+        <li class="page-item"><a href="contact.html" class="page-link">5</a></li>
+        <li class="page-item"><a href="suivant" class="page-link">Suivant</a></li>
+      </ul>
+    </nav>
+  </div>
+  <!--footer start-->
+<footer class="footer bg-warning text-dark">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h4>Liens utiles</h4>
+          <ul class="list-unstyled">
+            <li><a href="#">Accueil</a></li>
+            <li><a href="#">a propos</a></li>
+            <li><a href="#">menu</a></li>
+            <li><a href="#">compte</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h4>Contactez-nous</h4>
+          <p>Adresse : 4033 mourddine,M'saken ,Tunisie</p>
+          <p>Téléphone : +216 51125770</p>
+          <p>Email : contact@enchantingtunisiajourneys.com</p>
+        </div>
+      </div>
+    </div>
+    <div class="text-center py-3 bg-info">
+      <p>&copy; 2023 Enchanting Tunisia Journeys. Tous droits réservés.</p>
+    </div>
+  </footer>
+  <!--footer end-->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+  </html>
